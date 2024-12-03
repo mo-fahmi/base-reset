@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Form elements */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+  /* appearance: none; */
+}
+button,
+select {
+  text-transform: none;
+}
+textarea {
+  resize: vertical;
+}
+
+/* Media elements */
+audio,
+canvas,
+video {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Images */
+img {
+  border: none;
+  max-width: 100%;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Text */
+p,
+li,
+figcaption {
+  max-width: 65ch;
+  text-wrap: pretty;
+}
+
+/* Input types */
+input[type="search"] {
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+input[type="number"] {
+  appearance: textfield;
+}
+
+:focus {
+  outline: 1px solid #171717;
+}
+
+/* Selection color */
+::selection {
+  background-color: #083266;
+  text-shadow: none;
+}
+
+/* Fieldset reset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* getback CODE STARTS HERE --------------------------------------- */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to top left,
+    hsl(251, 21%, 7%),
+    hsl(271, 21%, 11%)
+  );
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
