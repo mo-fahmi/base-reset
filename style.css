@@ -97,16 +97,6 @@ input[type="number"] {
   appearance: textfield;
 }
 
-:focus {
-  outline: 1px solid #171717;
-}
-
-/* Selection color */
-::selection {
-  background-color: #083266;
-  text-shadow: none;
-}
-
 /* Fieldset reset */
 fieldset {
   border: none;
@@ -117,20 +107,18 @@ fieldset {
 /* getback CODE STARTS HERE --------------------------------------- */
 
 body {
+  padding: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to top left,
-    hsl(251, 21%, 7%),
-    hsl(271, 21%, 11%)
-  );
+  background-color: hsl(216, 16%, 6%);
   color: white;
   font-family: sans-serif;
 }
 
 h1 {
   font-size: 40px;
+  margin-block-end: 3rem;
 }
